@@ -1,46 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MY First Github Project</title>
-	<style>
-		body { 
-			font-family: Arial; 
-			text-align: center; 
-			padding: 50px; 
-			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-		}
-		h1 { 
-			color: white; 
-		}
-		h2 { 
-			color: white; 
-		}
-		ul {
-			display: inline-block;
-			text-align: left;	
-			margin: 20px auto;
-		}
-		li {	
-			margin: 10px 0;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibhor Gaur | Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        nav {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        ul {
+            display: inline-block;
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        li {
+            margin: 12px 0;
+        }
+    </style>
 </head>
 <body>
-	<h1>Hello from Github! </h1>
-	<p>This is my first GitHub page project. I just learned Git and Github!</p>
-	<p>Made on: <strong id="date"></strong></p>
+    <nav>
+        <div class="nav-container">
+            <h3>Vibhor Gaur</h3>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-	<h2>Next Goals</h2>
-	<ul>
-		<li>Learn CSS animations</li>
-		<li>Make a multi-page website</li>
-		<li>Contirubte to open source projects</li>
-	</ul>
-	
-	<script>
-		document.getElementById("date").textContent = new Date().toDateString();
-	</script>
+    <main>
+        <div class="content">
+            <h1>Hello from GitHub! 👋</h1>
+            <p>This is my first GitHub Pages website. I just learned Git and GitHub!</p>
+            <p><strong>Made on:</strong> <span id="date"></span></p>
+
+            <h2>Next Goals</h2>
+            <ul>
+                <li>Learn CSS animations</li>
+                <li>Build more projects</li>
+                <li>Contribute to open source</li>
+            </ul>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById("date").textContent = new Date().toDateString();
+    </script>
 </body>
 </html>
